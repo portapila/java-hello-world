@@ -1,9 +1,11 @@
 import java.util.Scanner;
 
-class primenumbers {
+class PrimeNumbers {
     public static void main (String[] args){
+        int a;
+               
+        
         Scanner input = new Scanner(System.in);
-        int i;
 
         System.out.print("Type a Natural Number: ");
         String naturalNumber = input.next();

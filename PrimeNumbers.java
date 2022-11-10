@@ -10,10 +10,5 @@ class primenumbers {
 
         System.out.println("You typed " + naturalNumber);
 
-        
-
-
-
-
     }    
 }

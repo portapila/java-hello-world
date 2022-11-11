@@ -1,6 +1,11 @@
 import java.util.Scanner;
 
-public class PrimeNumbers {
+/*
+ * incluir classes para:
+ * - debug
+  */
+
+public class PrimeNumbers extends Object {
     public static void main (String[] args){
         boolean isNatural[];
         int naturalNumber = -1;

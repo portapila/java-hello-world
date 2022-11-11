@@ -7,15 +7,16 @@ import java.util.Scanner;
 
 public class PrimeNumbers extends Object {
     public static void main (String[] args){
+        final int MAX_NUMBER = 100000;
         boolean isNatural[];
         int naturalNumber = -1;
         Scanner input = new Scanner(System.in);
 
         // get a number from user
 
-        while (naturalNumber < 1 || naturalNumber > 1000)
+        while (naturalNumber < 1 || naturalNumber > MAX_NUMBER)
         {
-            System.out.print("Type a Natural Number up to 1000: ");
+            System.out.print("Type a Natural Number from 1 to " + MAX_NUMBER + ": ");
             String typedNumber = input.next();
             System.out.println("You typed " + typedNumber);
             naturalNumber = Integer.parseInt(typedNumber);
@@ -43,13 +44,15 @@ public class PrimeNumbers extends Object {
 
         // print prime numbers list
         System.out.println("Prime Numbers List");
+        j = 0;
         for (i=2; i <= naturalNumber; i++)
         {
             if (!isNatural[i])
             {
                 System.out.print(i + ",");
+                j++;
             }
         }
-        System.out.println("\n---------------");
+        System.out.println("\n---------------\nCount:" + j);
     }    
 }

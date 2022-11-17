@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class PrimeNumbers extends Object {
     public static void main (String[] args){
-        final int MAX_NUMBER = 100000;
+        final int MAX_NUMBER = 10000000;
         boolean isNatural[];
         int naturalNumber = -1;
         Scanner input = new Scanner(System.in);
@@ -49,8 +49,8 @@ public class PrimeNumbers extends Object {
         {
             if (!isNatural[i])
             {
-                System.out.print(i + ",");
                 j++;
+                System.out.print("(" + j + ")" + i + ",");
             }
         }
         System.out.println("\n---------------\nCount:" + j);

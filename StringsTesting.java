@@ -17,14 +17,15 @@ public class StringsTesting {
 		System.out.println("indexOf(\"Portapila\")=[" + MyStr.indexOf("Portapila") + "]");
 		System.out.println("lastIndexOf(\"Portapila\")=[" + MyStr.lastIndexOf("Portapila") + "]");
 		
-		String vector[] = MyStr.split(" ");
-		int i;
+		String[] vector = MyStr.split(" ");
 		System.out.print("split(\' \')=");
-		for (i=0; vector[i] != null; i++)
+		for (String s: vector)
 		{
-			System.out.print("[" + vector[i] + "]");
-		}
+			System.out.print("[" + s + "]");
+		} 
 		System.out.println("");
+		
+		
 
 	}
 
